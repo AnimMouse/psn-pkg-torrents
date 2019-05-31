@@ -16,11 +16,12 @@ All torrents that I created are created on qbittorrent.
 
 All torrents that I created are created on Google Compute Engine VPS.
 
-As of 5/31/19, we are going trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of the torrent trackers.
-
 ~~When a torrent is created, all trackers are taken on [newTrackon](https://newtrackon.com/) trackerlist at the time of the creation.~~
+As of 5/31/19, we are going trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of the torrent trackers.
 
 ## Contributing
 All torrents are created if I need/want to download that game, so not all games are included.
+
+If you need a game not included in this repository, just make an issue.
 
 For more information, go to CONTRIBUTING.md.
