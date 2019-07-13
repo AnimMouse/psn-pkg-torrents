@@ -16,10 +16,9 @@ All torrents that I created are created on qbittorrent.
 
 All torrents that I created are created on Google Compute Engine VPS.
 
-The piece size of the torrent that I creared are set automatically by libtorrent.
+The piece size of the torrent that I created are set automatically by libtorrent.
 
-~~When a torrent is created, all trackers are taken on [newTrackon](https://newtrackon.com/) trackerlist at the time of the creation.~~
-As of 5/31/19, we are going trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of the torrent trackers.
+Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of torrent trackers.
 
 ## Contributing
 All torrents are created if I need/want to download that game, so not all games are included.
