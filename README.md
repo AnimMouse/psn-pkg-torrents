@@ -14,7 +14,7 @@ All game links that I used for creating the torrent are from [NoPayStation](http
 
 All torrents that I created are created on qBittorrent.
 
-~~All torrents that I created are created on Google Compute Engine VPS.
+~~All torrents that I created are created on Google Compute Engine VPS.~~
 
 The piece size of the torrent that I created are set automatically by libtorrent.
 
