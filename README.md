@@ -12,9 +12,9 @@ Combines the best of both worlds (P2P and Direct HTTP Link).
 ## Technical Infos
 All game links that I used for creating the torrent are from [NoPayStation](https://nopaystation.com/).
 
-All torrents that I created are created on qbittorrent.
+All torrents that I created are created on qBittorrent.
 
-All torrents that I created are created on Google Compute Engine VPS.
+~~All torrents that I created are created on Google Compute Engine VPS.
 
 The piece size of the torrent that I created are set automatically by libtorrent.
 
