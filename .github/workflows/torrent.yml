@@ -6,7 +6,7 @@ on:
       
 env:
   name: Metal Gear Solid 4 Guns of the Patriots PS3
-  comment: Metal Gear Solid 4: Guns of the Patriots PS3 PSN PKG NPS by AM
+  comment: "Metal Gear Solid 4: Guns of the Patriots PS3 PSN PKG NPS by AM"
   pkg_url: http://zeus.dl.playstation.net/cdn/UP0101/NPUB31633_00/sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
   file_name: sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
   piece_size: 23
