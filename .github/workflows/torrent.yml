@@ -1,0 +1,32 @@
+name: Make torrent
+on: 
+  push:
+    paths: 
+      - .github/workflows/torrent.yml
+      
+env:
+  name: Metal Gear Solid 4 Guns of the Patriots PS3
+  comment: Metal Gear Solid 4 Guns of the Patriots PS3 PSN PKG NPS by AM
+  pkg_url: http://zeus.dl.playstation.net/cdn/UP0101/NPUB31633_00/sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
+  file_name: sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
+  output: ${{ env.name }}.torrent
+  
+      
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install mktorrent
+        run: sudo apt-get install mktorrent
+        
+      - name: Download game
+        run: wget $pkg_url
+          
+      - name: Make torrent using mktorrent
+        run: mktorrent -c "$comment" -n "$name" -o "$output" -w "$pkg_url" $file_name
+          
+      - name: Upload torrent file
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.name }}
+          path: ${{ env.output }}
