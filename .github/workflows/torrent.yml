@@ -9,7 +9,7 @@ env:
   comment: "Metal Gear Solid 4: Guns of the Patriots PS3 PSN PKG NPS by AM"
   pkg_url: http://zeus.dl.playstation.net/cdn/UP0101/NPUB31633_00/sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
   file_name: sjHOVlbBrKwQWElMUjQqTWuFJfMlRHjxSxRPnuAFUbYHWqtIykmXvTqWajYhqDrW.pkg
-  piece_size: 23
+  piece_size: 24 # Check the Wiki for recommended piece size
   output: Metal Gear Solid 4 Guns of the Patriots PS3.torrent
       
 jobs:
