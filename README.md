@@ -21,6 +21,8 @@ Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchang
 ## GitHub Actions Torrent Maker
 Using GitHub Actions to download game PKG, and using [mktorrent](https://github.com/Rudde/mktorrent) to make a torrent file for that game.
 
+On torrent-maker branch.
+
 ## Contributing
 Game torrents are created if I need/want to download that game, so not all games are included.
 
