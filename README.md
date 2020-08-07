@@ -18,10 +18,10 @@ All game links that I used for creating the torrent are from [NoPayStation](http
 
 Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of torrent trackers.
 
-## GitHub Actions Torrent Maker
-Using GitHub Actions to download game PKG, and using [mktorrent](https://github.com/Rudde/mktorrent) to make a torrent file for that game.
+## Torrent Webseed Creator
+Using GitHub Actions to download game PKG, and using [mktorrent](https://github.com/Rudde/mktorrent) to create a torrent file for that game.
 
-On torrent-maker branch.
+On torrent-creator branch.
 
 ## Contributing
 Game torrents are created if I need/want to download that game, so not all games are included.
