@@ -1,0 +1,32 @@
+name: Make torrent
+on:
+  push:
+    branches:
+      - torrent-maker
+      
+env:
+  name: "FIFA 19"
+  comment: "FIFA 19 EU PS3 PSN PKG NPS by AM"
+  pkg_url: http://zeus.dl.playstation.net/cdn/EP0006/NPEB02461_00/EP0006-NPEB02461_00-FIFA19PSNDIGITAL_bg_1_2733936f3a4167697ee48b9e3c77fb56a856a07c.pkg
+  file_name: EP0006-NPEB02461_00-FIFA19PSNDIGITAL_bg_1_2733936f3a4167697ee48b9e3c77fb56a856a07c.pkg
+  piece_size: 23 # Check the Wiki for recommended piece size
+  output: "FIFA 19 EU PS3.torrent"
+      
+jobs:
+  make:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install mktorrent
+        run: sudo apt-get install mktorrent
+        
+      - name: Download game
+        run: wget -nv $pkg_url
+        
+      - name: Make torrent using mktorrent
+        run: mktorrent -c "$comment" -l $piece_size -o "$output" -w "$pkg_url" $file_name
+        
+      - name: Upload torrent file
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.name }}
+          path: ${{ env.output }}
