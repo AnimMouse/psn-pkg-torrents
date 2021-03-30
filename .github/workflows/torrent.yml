@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Army of Two The Devil's Cartel PS3"
-  comment: "Army of Two The Devil's Cartel US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0006/NPUB30987_00/aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
-  file_name: "aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
+  name: "Resident Evil 6 PS3"
+  comment: "Resident Evil 6 US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0102/NPUB30984_00/bSKEPPJKwsiXkEyJRLzOHSdmsPRsmaMuzTGuywgIcYZRejZgkQLujUakWdmAbAke.pkg"
+  file_name: "bSKEPPJKwsiXkEyJRLzOHSdmsPRsmaMuzTGuywgIcYZRejZgkQLujUakWdmAbAke.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: hybrid # BitTorrent version 1 & 2
   
