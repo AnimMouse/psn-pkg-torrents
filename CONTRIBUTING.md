@@ -1,8 +1,10 @@
 ## Contributing
 If you want to create a torrent to help our list of games, feel free to make a pull request.
 
-Comment format: \<Game> \<Console> PSN PKG \<Where the link come from> by \<Your Username in acronym>
+Or use our torrent creator, feel free to edit the environment variables on the yaml file and create a pull request.
 
-Example: Grand Theft Auto V PS3 PSN PKG NPS by AM
+Comment format: \<Game Name> \<Region> \<Console> PSN PKG \<Where the link come from> by \<Username>
 
-Example: Pro Evolution Soccer 2019 PS4 PSN PKG PSNDL by AM
+Example: Grand Theft Auto V US PS3 PSN PKG NPS by AnimMouse
+
+Example: Pro Evolution Soccer 2019 US PS4 PSN PKG PSNDL by AnimMouse
