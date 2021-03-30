@@ -1,28 +1,32 @@
-name: Create torrent
+name: Create PKG torrent using torrenttools
 on:
   push:
     branches:
       - torrent-creator
       
 env:
-  name: "FIFA 19 EU PS3"
-  comment: "FIFA 19 EU PS3 PSN PKG NPS by AM"
-  pkg_url: http://zeus.dl.playstation.net/cdn/EP0006/NPEB02461_00/EP0006-NPEB02461_00-FIFA19PSNDIGITAL_bg_1_2733936f3a4167697ee48b9e3c77fb56a856a07c.pkg
-  file_name: EP0006-NPEB02461_00-FIFA19PSNDIGITAL_bg_1_2733936f3a4167697ee48b9e3c77fb56a856a07c.pkg
-  piece_size: 23 # Check the Wiki for recommended piece size
-      
+  name: "Army of Two The Devil's Cartel PS3"
+  comment: "Army of Two The Devil's Cartel US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0006/NPUB30987_00/aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
+  file_name: "aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
+  piece_size: auto # auto for automatic calculation
+  protocol_version: hybrid # BitTorrent version 1 & 2
+  
 jobs:
   create:
     runs-on: ubuntu-20.04
     steps:
-      - name: Install mktorrent
-        run: sudo apt-get install mktorrent
+      - name: Install torrenttools
+        run: |
+          sudo add-apt-repository ppa:fbdtemme/torrenttools
+          sudo apt-get update
+          sudo apt-get install torrenttools
+          
+      - name: Download file
+        run: wget -nv -O "$file_name" "$pkg_url"
         
-      - name: Download PKG File
-        run: wget -nv $pkg_url
-        
-      - name: Create torrent using mktorrent
-        run: mktorrent -c "$comment" -l $piece_size -o "${name}.torrent" -w "$pkg_url" "$file_name"
+      - name: Create torrent using torrenttools
+        run: torrenttools create -v $protocol_version -o "${name}.torrent" -w "$pkg_url" -c "$comment" -l $piece_size "$file_name"
         
       - name: Upload torrent file
         uses: actions/upload-artifact@v2
