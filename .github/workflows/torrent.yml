@@ -10,7 +10,7 @@ env:
   pkg_url: "http://zeus.dl.playstation.net/cdn/UP0102/NPUB30984_00/bSKEPPJKwsiXkEyJRLzOHSdmsPRsmaMuzTGuywgIcYZRejZgkQLujUakWdmAbAke.pkg"
   file_name: "bSKEPPJKwsiXkEyJRLzOHSdmsPRsmaMuzTGuywgIcYZRejZgkQLujUakWdmAbAke.pkg"
   piece_size: auto # auto for automatic calculation
-  protocol_version: hybrid # BitTorrent version 1 & 2
+  protocol_version: 2 # BitTorrent version 1 & 2
   
 jobs:
   create:
