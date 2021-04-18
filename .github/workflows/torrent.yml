@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "FIFA 15 EU PS3"
-  comment: "FIFA 15 EU PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/EP0006/NPEB02045_00/OvJdjcCHidksPDuKjvhdpkcjiSaAYvaHqInCYDziRFEjjSmYzREBjqhTCIkzsjXwiOjBCLdqmURBEztLmwtqXokUFPilbQZSbnggD.pkg"
-  file_name: "OvJdjcCHidksPDuKjvhdpkcjiSaAYvaHqInCYDziRFEjjSmYzREBjqhTCIkzsjXwiOjBCLdqmURBEztLmwtqXokUFPilbQZSbnggD.pkg"
+  name: "NBA 2K16 EU PS3"
+  comment: "NBA 2K16 EU PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/EP1001/NPEB02313_00/EP1001-NPEB02313_00-NBA2K16000000000_bg_1_3ada0e2ac3708ccc91c0617d2b2480501bf6bb28.pkg"
+  file_name: "EP1001-NPEB02313_00-NBA2K16000000000_bg_1_3ada0e2ac3708ccc91c0617d2b2480501bf6bb28.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1 & 2
   
