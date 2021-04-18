@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Army of Two The Devil's Cartel PS3"
-  comment: "Army of Two The Devil's Cartel US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0006/NPUB30987_00/aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
-  file_name: "aGWRjzocVoZXziflRHCtbVBoDjoLvGjoMhfKUfvFJNZbYOjVCImylGRkAOvUBAfP.pkg"
+  name: "Call of Duty Advanced Warfare PS3"
+  comment: "Call of Duty: Advanced Warfare US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0002/NPUB31553_00/RAoycNjnbHMtAkrCtACnECoRosemCRhAnSWsKqLrJwBUehZwjaXABdRPBUQIUcGn.pkg"
+  file_name: "RAoycNjnbHMtAkrCtACnECoRosemCRhAnSWsKqLrJwBUehZwjaXABdRPBUQIUcGn.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1 & 2
   
@@ -23,7 +23,7 @@ jobs:
           sudo apt-get install torrenttools
           
       - name: Download file
-        run: wget -nv -O "$file_name" "$pkg_url"
+        run: aria2c -x 16 -o "$file_name" "$pkg_url"
         
       - name: Create torrent using torrenttools
         run: torrenttools create -v $protocol_version -o "${name}.torrent" -w "$pkg_url" -c "$comment" -l $piece_size "$file_name"
