@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Call of Duty Advanced Warfare PS3"
-  comment: "Call of Duty: Advanced Warfare US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0002/NPUB31553_00/RAoycNjnbHMtAkrCtACnECoRosemCRhAnSWsKqLrJwBUehZwjaXABdRPBUQIUcGn.pkg"
-  file_name: "RAoycNjnbHMtAkrCtACnECoRosemCRhAnSWsKqLrJwBUehZwjaXABdRPBUQIUcGn.pkg"
+  name: "Call of Duty Black Ops III PS3"
+  comment: "Call of Duty: Black Ops III US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0002/NPUB31665_00/UP0002-NPUB31665_00-BLACKOPS3GAME000_bg_1_69009aeb8b6d6be838d37d76c4246c03a200eaa8.pkg"
+  file_name: "UP0002-NPUB31665_00-BLACKOPS3GAME000_bg_1_69009aeb8b6d6be838d37d76c4246c03a200eaa8.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1 & 2
   
