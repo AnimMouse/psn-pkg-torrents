@@ -5,12 +5,12 @@ on:
       - torrent-creator
       
 env:
-  name: "NBA 2K16 EU PS3"
-  comment: "NBA 2K16 EU PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/EP1001/NPEB02313_00/EP1001-NPEB02313_00-NBA2K16000000000_bg_1_3ada0e2ac3708ccc91c0617d2b2480501bf6bb28.pkg"
-  file_name: "EP1001-NPEB02313_00-NBA2K16000000000_bg_1_3ada0e2ac3708ccc91c0617d2b2480501bf6bb28.pkg"
+  name: "Pro Evolution Soccer 2018 PS3"
+  comment: "Pro Evolution Soccer 2018 PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0101/NPUB31864_00/UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
+  file_name: "UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
   piece_size: auto # auto for automatic calculation
-  protocol_version: 1 # BitTorrent version 1 & 2
+  protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
 jobs:
   create:
