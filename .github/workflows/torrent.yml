@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Pro Evolution Soccer 2018 PS3"
-  comment: "Pro Evolution Soccer 2018 US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0101/NPUB31864_00/UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
-  file_name: "UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
+  name: "Grand Theft Auto IV v2 PS3"
+  comment: "Grand Theft Auto IV v2 US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP1017/NPUB30702_00/UP1017-NPUB30702_00-GTAIVDIGITAL0001_bg_2_9b064f933b0ec5abb7fea40a8daf7814c46ef332.pkg"
+  file_name: "UP1017-NPUB30702_00-GTAIVDIGITAL0001_bg_2_9b064f933b0ec5abb7fea40a8daf7814c46ef332.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
