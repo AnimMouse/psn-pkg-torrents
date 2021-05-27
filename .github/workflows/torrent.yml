@@ -10,7 +10,7 @@ env:
   pkg_url: "http://zeus.dl.playstation.net/cdn/UP0101/NPUB31864_00/UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
   file_name: "UP0101-NPUB31864_00-PES2018000000000_bg_1_4e7337a7c896b49a2e85f575c89d090354975eb8.pkg"
   piece_size: auto # auto for automatic calculation
-  protocol_version: 2 # BitTorrent version 1, 2, or hybrid
+  protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
 jobs:
   create:
@@ -26,7 +26,7 @@ jobs:
         run: aria2c -x 16 -o "$file_name" "$pkg_url"
         
       - name: Create torrent using torrenttools
-        run: torrenttools create -v $protocol_version -o "${name}.torrent" -w "$pkg_url" -c "$comment" -l $piece_size "$file_name"
+        run: torrenttools create -v $protocol_version -o "${name}.torrent" -w "$pkg_url" -c "$comment" -l $piece_size -s psn-pkg-torrents "$file_name"
         
       - name: Upload torrent file
         uses: actions/upload-artifact@v2
