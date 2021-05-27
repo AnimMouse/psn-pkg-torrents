@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Pro Evolution Soccer 2014 PS3"
-  comment: "Pro Evolution Soccer 2014 PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0101/NPUB31337_00/NuXpEGRXZmEtfBHpwyULibAXwWgjaEyhjFJZvWcRsezciTprSFMQbCAdgAlOwIte.pkg"
-  file_name: "NuXpEGRXZmEtfBHpwyULibAXwWgjaEyhjFJZvWcRsezciTprSFMQbCAdgAlOwIte.pkg"
+  name: "Grand Theft Auto V PS3"
+  comment: "Grand Theft Auto V US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP1004/NPUB31154_00/eISFknCNDxqSsVVywSenkJdhzOIfZjrqKHcuGBHEGvUxQJksdPvRNYbIyWcxFsvH.pkg"
+  file_name: "eISFknCNDxqSsVVywSenkJdhzOIfZjrqKHcuGBHEGvUxQJksdPvRNYbIyWcxFsvH.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
