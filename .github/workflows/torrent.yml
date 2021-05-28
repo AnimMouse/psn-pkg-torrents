@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Fight Night Champion PS3"
-  comment: "Fight Night Champion US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0006/NPUB30595_00/pjIFYhSXHQKoimquQrFwvsQNtmQWjytaNiVkWCxweVMJAcYqhFalZOERiNpgANuwJaHrdddpHxkRwgVYABVtAMUwkwcZoXuYANCiG.pkg"
-  file_name: "pjIFYhSXHQKoimquQrFwvsQNtmQWjytaNiVkWCxweVMJAcYqhFalZOERiNpgANuwJaHrdddpHxkRwgVYABVtAMUwkwcZoXuYANCiG.pkg"
+  name: "LittleBigPlanet PS3"
+  comment: "LittleBigPlanet US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80472_00/qFcxgxEXqEWYODYHhjub4YI3Km5QY1iayRkkO6QXk6bFsTiwn7QW3l1r9rviiaqtGce9VRgWLrNpmYmDr1kC1VjBEsgocCb5HSRh5.pkg"
+  file_name: "qFcxgxEXqEWYODYHhjub4YI3Km5QY1iayRkkO6QXk6bFsTiwn7QW3l1r9rviiaqtGce9VRgWLrNpmYmDr1kC1VjBEsgocCb5HSRh5.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
