@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "LittleBigPlanet 3 PS3"
-  comment: "LittleBigPlanet 3 US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA81116_00/aKFlQguFjIQtodJibSefHesXqMsbnyNxJDxiaScFMbGpcvVUrkBOlAymJJNOQMpphWBlyrwyVzMzdnjZDqfMvbqcTsYRuzuDpYAaK.pkg"
-  file_name: "aKFlQguFjIQtodJibSefHesXqMsbnyNxJDxiaScFMbGpcvVUrkBOlAymJJNOQMpphWBlyrwyVzMzdnjZDqfMvbqcTsYRuzuDpYAaK.pkg"
+  name: "FIFA Street PS3"
+  comment: "FIFA Street US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0006/NPUB30651_00/aymfXEUwAVOpUvPHqUuKzqTksFSXsWXrbuVOjqVPODnaejcMHemMhXBeFkSEkWtZUArbgbynnMTaHpYodbXVpEFMZCFhLyklvrvxa.pkg"
+  file_name: "aymfXEUwAVOpUvPHqUuKzqTksFSXsWXrbuVOjqVPODnaejcMHemMhXBeFkSEkWtZUArbgbynnMTaHpYodbXVpEFMZCFhLyklvrvxa.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
