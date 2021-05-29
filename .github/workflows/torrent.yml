@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "WWE 2K16 PS3"
-  comment: "WWE 2K16 US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP1001/NPUB31743_00/UP1001-NPUB31743_00-WWE2K16DIGITAL01_bg_1_15c43fd361adf64a2b90a51c33aadaad80f861ba.pkg"
-  file_name: "UP1001-NPUB31743_00-WWE2K16DIGITAL01_bg_1_15c43fd361adf64a2b90a51c33aadaad80f861ba.pkg"
+  name: "WWE 2K15 PS3"
+  comment: "WWE 2K15 US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP1001/NPUB31546_00/ryoOkuVKvTkDzZdBBqURJauflrXIrigUMJIbwhMLRZokmIgptZmXRwmLjxvRdnWr.pkg"
+  file_name: "ryoOkuVKvTkDzZdBBqURJauflrXIrigUMJIbwhMLRZokmIgptZmXRwmLjxvRdnWr.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
