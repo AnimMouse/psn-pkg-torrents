@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "WWE 2K15 PS3"
-  comment: "WWE 2K15 US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP1001/NPUB31546_00/ryoOkuVKvTkDzZdBBqURJauflrXIrigUMJIbwhMLRZokmIgptZmXRwmLjxvRdnWr.pkg"
-  file_name: "ryoOkuVKvTkDzZdBBqURJauflrXIrigUMJIbwhMLRZokmIgptZmXRwmLjxvRdnWr.pkg"
+  name: "Tekken Tag Tournament 2 PS3"
+  comment: "Tekken Tag Tournament 2 US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0700/NPUB30899_00/ItKzSOujDQkjONIBWbpFREnVVGCWIjPEgIiQOREKVIXrfliGHqQDYHdMGSSABssS.pkg"
+  file_name: "ItKzSOujDQkjONIBWbpFREnVVGCWIjPEgIiQOREKVIXrfliGHqQDYHdMGSSABssS.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
