@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "SpongeBob SquarePants Plankton's Robotic Revenge PS3"
-  comment: "SpongeBob SquarePants Plankton's Robotic Revenge US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0002/NPUB31310_00/mzNFwGapNtWKMvnJeMhNCCKMOsIGPNmpvqSvTbeCSCGxgTEiuXQcJIEsUtaXShPF.pkg"
-  file_name: "mzNFwGapNtWKMvnJeMhNCCKMOsIGPNmpvqSvTbeCSCGxgTEiuXQcJIEsUtaXShPF.pkg"
+  name: "inFAMOUS PS3"
+  comment: "inFAMOUS US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80480_00/EWuNWyWqVaIsykUkMPQhqIRSbyrKvjzagKzwdJgqBcKtJcFyXzGtreFyhGprTlKhYvWSBHUmFBRLfmCfDsZwoxdbtqOuvQkugpvlD.pkg"
+  file_name: "EWuNWyWqVaIsykUkMPQhqIRSbyrKvjzagKzwdJgqBcKtJcFyXzGtreFyhGprTlKhYvWSBHUmFBRLfmCfDsZwoxdbtqOuvQkugpvlD.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
