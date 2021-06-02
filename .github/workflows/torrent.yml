@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "inFAMOUS 2 PS3"
-  comment: "inFAMOUS 2 US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80638_00/gMxSOPbAdDfSFZAaZTjNIfBmsudlfqPBmumpwEqnbHYExdlkeXPxHxsAzSZwEqVuKiSLQemfittEXmXaIqRwPQWtjjLwmawBtehUW.pkg"
-  file_name: "gMxSOPbAdDfSFZAaZTjNIfBmsudlfqPBmumpwEqnbHYExdlkeXPxHxsAzSZwEqVuKiSLQemfittEXmXaIqRwPQWtjjLwmawBtehUW.pkg"
+  name: "Resident Evil 5 - Gold Edition PS3"
+  comment: "Resident Evil 5 - Gold Edition US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0102/NPUB30564_00/PPsInONjvnkkOXnXXCfXORcvwkLxmAHyVipcmOkeyWUTMZWLGJGcGhzfwXWhvGGoufBiyIwiwPUCFoIhnxAHeSRnciVINvneoMKNq.pkg"
+  file_name: "PPsInONjvnkkOXnXXCfXORcvwkLxmAHyVipcmOkeyWUTMZWLGJGcGhzfwXWhvGGoufBiyIwiwPUCFoIhnxAHeSRnciVINvneoMKNq.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
