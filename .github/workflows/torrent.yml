@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "Resident Evil 5 - Gold Edition PS3"
-  comment: "Resident Evil 5 - Gold Edition US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP0102/NPUB30564_00/PPsInONjvnkkOXnXXCfXORcvwkLxmAHyVipcmOkeyWUTMZWLGJGcGhzfwXWhvGGoufBiyIwiwPUCFoIhnxAHeSRnciVINvneoMKNq.pkg"
-  file_name: "PPsInONjvnkkOXnXXCfXORcvwkLxmAHyVipcmOkeyWUTMZWLGJGcGhzfwXWhvGGoufBiyIwiwPUCFoIhnxAHeSRnciVINvneoMKNq.pkg"
+  name: "LocoRoco Cocoreccho PS3"
+  comment: "LocoRoco Cocoreccho US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80069_00/TnHpdqAYvirgDGR8hwC3KgAQ5qPtYu5yLqT9bni9gxI2Da7mKRDilISHfi3MB9E2dKa7VhNK7jgaRcRtfTDOaU2BIrkHeODDe0YG3.pkg"
+  file_name: "TnHpdqAYvirgDGR8hwC3KgAQ5qPtYu5yLqT9bni9gxI2Da7mKRDilISHfi3MB9E2dKa7VhNK7jgaRcRtfTDOaU2BIrkHeODDe0YG3.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
