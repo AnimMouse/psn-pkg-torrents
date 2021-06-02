@@ -5,10 +5,10 @@ on:
       - torrent-creator
       
 env:
-  name: "inFAMOUS PS3"
-  comment: "inFAMOUS US PS3 PSN PKG NPS by AnimMouse"
-  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80480_00/EWuNWyWqVaIsykUkMPQhqIRSbyrKvjzagKzwdJgqBcKtJcFyXzGtreFyhGprTlKhYvWSBHUmFBRLfmCfDsZwoxdbtqOuvQkugpvlD.pkg"
-  file_name: "EWuNWyWqVaIsykUkMPQhqIRSbyrKvjzagKzwdJgqBcKtJcFyXzGtreFyhGprTlKhYvWSBHUmFBRLfmCfDsZwoxdbtqOuvQkugpvlD.pkg"
+  name: "inFAMOUS 2 PS3"
+  comment: "inFAMOUS 2 US PS3 PSN PKG NPS by AnimMouse"
+  pkg_url: "http://zeus.dl.playstation.net/cdn/UP9000/NPUA80638_00/gMxSOPbAdDfSFZAaZTjNIfBmsudlfqPBmumpwEqnbHYExdlkeXPxHxsAzSZwEqVuKiSLQemfittEXmXaIqRwPQWtjjLwmawBtehUW.pkg"
+  file_name: "gMxSOPbAdDfSFZAaZTjNIfBmsudlfqPBmumpwEqnbHYExdlkeXPxHxsAzSZwEqVuKiSLQemfittEXmXaIqRwPQWtjjLwmawBtehUW.pkg"
   piece_size: auto # auto for automatic calculation
   protocol_version: 1 # BitTorrent version 1, 2, or hybrid
   
