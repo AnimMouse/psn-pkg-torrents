@@ -1,0 +1,48 @@
+name: Create PKG torrent using torrenttools
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Name"
+        required: true
+        default: " PS3"
+      comment:
+        description: "Comment"
+        required: true
+        default: " US PS3 PSN PKG NPS by AnimMouse"
+      url:
+        description: "PKG URL"
+        required: true
+      file_name:
+        description: "File name"
+        required: true
+      piece_size:
+        description: "Piece Size. Use auto for automatic calculation."
+        required: true
+        default: "auto"
+      protocol_version:
+        description: "BitTorrent Protocol version 1, 2, or hybrid"
+        required: true
+        default: "1"
+        
+jobs:
+  create:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install torrenttools
+        run: |
+          sudo add-apt-repository ppa:fbdtemme/torrenttools
+          sudo apt-get update
+          sudo apt-get install torrenttools
+          
+      - name: Download file
+        run: aria2c -x 16 -o "${{ github.event.inputs.file_name }}" "${{ github.event.inputs.url }}"
+        
+      - name: Create torrent using torrenttools
+        run: torrenttools create -v "${{ github.event.inputs.protocol_version }}" -o "${{ github.event.inputs.name }}.torrent" -w "${{ github.event.inputs.url }}" -c "${{ github.event.inputs.comment }}" -l "${{ github.event.inputs.piece_size }}" -s "psn-pkg-torrents" "${{ github.event.inputs.file_name }}"
+        
+      - name: Upload torrent file
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ github.event.inputs.name }}
+          path: ${{ github.event.inputs.name }}.torrent
