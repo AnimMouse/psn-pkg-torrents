@@ -15,9 +15,9 @@ All game links that I used for creating the torrent are from [NoPayStation](http
 Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of torrent trackers.
 
 ## Torrent Webseed Creator
-Using GitHub Actions to download game PKG, and using [torrenttools](https://github.com/fbdtemme/torrenttools) to create a torrent file for that game.
-
-On [torrent-creator](https://github.com/AnimMouse/psn-pkg-torrents/tree/torrent-creator) branch.
+Powered by [Torrent Webseed Creator](https://github.com/AnimMouse/torrent-webseed-creator), a webseeded torrent creator using GitHub Actions.\
+Using GitHub Actions to download game PKG.\
+Powered by [torrenttools](https://github.com/fbdtemme/torrenttools) to create a torrent file for that PKG.
 
 ## Contributing
 Game torrents are created if I need/want to download that game, so not all games are included.
