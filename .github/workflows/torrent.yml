@@ -1,4 +1,4 @@
-name: Create PKG torrent using torrenttools
+name: Create PKG torrent
 on:
   workflow_dispatch:
     inputs:
@@ -27,7 +27,7 @@ on:
         
 jobs:
   create:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Install torrenttools
         run: |
