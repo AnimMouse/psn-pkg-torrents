@@ -27,4 +27,4 @@ For v2 and hybrid torrents, append the BitTorrent protocol version used at the e
 
 Example v2 file name: Grand Theft Auto V PS3 v2.torrent
 
-Example hybrid file name: Gravity Rush PSVita.torrent
+Example hybrid file name: Gravity Rush PSVita hybrid.torrent
