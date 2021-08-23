@@ -1,5 +1,5 @@
 # PlayStation Network PKG Torrents
-For people that have unstable internet.
+For people that have slow and/or unstable internet.
 
 Can be paused because it is a torrent.
 
@@ -15,13 +15,20 @@ All game links that I used for creating the torrent are from [NoPayStation](http
 Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of torrent trackers.
 
 ## Torrent Webseed Creator
-Powered by [Torrent Webseed Creator](https://github.com/AnimMouse/torrent-webseed-creator), a webseeded torrent creator using GitHub Actions.\
-Using GitHub Actions to download game PKG.\
+Powered by [Torrent Webseed Creator](https://github.com/AnimMouse/torrent-webseed-creator), a webseeded torrent creator using GitHub Actions.
+
+Using GitHub Actions to download game PKG.
+
 Powered by [torrenttools](https://github.com/fbdtemme/torrenttools) to create a torrent file for that PKG.
 
-## Contributing
+## Game Requests
 Game torrents are created if I need/want to download that game, so not all games are included.
 
-If you need a game not included in this repository, just make an issue.
+If you need a game not included in this repository, make a discussion or an issue in GitHub.
 
-For more information, go to CONTRIBUTING.md.
+If you don't have a GitHub Account, you can email your requests at psn-pkg-torrents@animmouse.com
+
+## Contributing
+If you want to create a torrent to help our list of games, feel free to make a pull request.
+
+For more information, go to CONTRIBUTING.md
