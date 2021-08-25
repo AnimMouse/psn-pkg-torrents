@@ -24,7 +24,9 @@ Powered by [torrenttools](https://github.com/fbdtemme/torrenttools) to create a 
 ## Game Requests
 Game torrents are created if I need/want to download that game, so not all games are included.
 
-If you need a game not included in this repository, make a discussion or an issue in GitHub.
+If you need a game not included in this repository, comment on the [Game Requests discussion](https://github.com/AnimMouse/psn-pkg-torrents/discussions/8) on GitHub.
+
+For games not downloading on torrents or for any problems, make an issue on GitHub.
 
 If you don't have a GitHub Account, you can email your requests at psn-pkg-torrents@animmouse.com
 
