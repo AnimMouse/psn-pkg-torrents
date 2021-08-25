@@ -23,7 +23,7 @@ on:
         default: "1"
         
 jobs:
-  create:
+  create_torrent:
     runs-on: ubuntu-latest
     steps:
       - name: Install torrenttools
