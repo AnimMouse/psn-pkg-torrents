@@ -3,24 +3,24 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: "Name"
+        description: Name
         required: true
-        default: " PS3"
+        default: ' PS3'
       comment:
-        description: "Comment"
+        description: Comment
         required: true
-        default: " US PS3 PSN PKG NPS by AnimMouse"
+        default: ' US PS3 PSN PKG NPS by AnimMouse'
       url:
-        description: "PKG URL"
+        description: PKG URL
         required: true
       piece_size:
-        description: "Piece Size. Use auto for automatic calculation."
+        description: Piece Size. Use auto for automatic calculation.
         required: true
-        default: "auto"
+        default: auto
       protocol_version:
-        description: "BitTorrent Protocol version 1, 2, or hybrid"
+        description: BitTorrent Protocol version 1, 2, or hybrid
         required: true
-        default: "1"
+        default: 1
         
 jobs:
   create_torrent:
