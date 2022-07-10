@@ -28,7 +28,7 @@ If you need a game not included in this repository, comment on the [Game Request
 
 For games not downloading on torrents or for any problems, make an issue on GitHub.
 
-If you don't have a GitHub Account, you can email your requests at psn-pkg-torrents@animmouse.com
+If you don't have a GitHub Account, you can join on our [Discord server](https://discord.gg/MafyWwVek6) or email your requests at psn-pkg-torrents@animmouse.com
 
 ## Contributing
 If you want to create a torrent to help our list of games, feel free to make a pull request.
