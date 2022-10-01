@@ -47,7 +47,7 @@ jobs:
       - name: Get info and file name
         id: info
         run: |
-          echo ::set-output name=info::${{ inputs.title }} ${{ inputs.region }} ${{ inputs.console }} ${{ inputs.title-id }}
+          echo "::set-output name=info::${{ inputs.title }} ${{ inputs.region }} ${{ inputs.console }} ${{ inputs.title-id }}"
           echo ::set-output name=file_name::$(basename ${{ inputs.pkg-url }})
           
       - name: Download PKG
