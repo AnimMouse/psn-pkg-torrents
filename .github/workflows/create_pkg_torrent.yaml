@@ -1,0 +1,69 @@
+name: Create PKG torrent
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: Title
+        required: true
+      region:
+        description: Region
+        required: true
+        default: US
+        type: choice
+        options: [US, EU, JP, ASIA]
+      console:
+        description: Console
+        required: true
+        default: PS3
+        type: choice
+        options: [PS3, PSVita, PSP]
+      title-id:
+        description: Title ID
+        required: true
+      pkg-url:
+        description: PKG URL
+        required: true
+      protocol_version:
+        description: BitTorrent Protocol version 1, 2, or hybrid
+        required: true
+        default: 1
+        type: choice
+        options: [1, 2, hybrid]
+        
+jobs:
+  create_torrent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install torrenttools
+        run: |
+          sudo add-apt-repository -y ppa:fbdtemme/torrenttools
+          sudo apt-get -qq install torrenttools
+          
+      - name: Checkout PSN PKG Torrents
+        uses: actions/checkout@v3
+        with:
+          path: psn-pkg-torrents
+          
+      - name: Get info and file name
+        id: info
+        run: |
+          echo ::set-output name=info::${{ inputs.title }} ${{ inputs.region }} ${{ inputs.console }} ${{ inputs.title-id }}
+          echo ::set-output name=file_name::$(basename ${{ inputs.pkg-url }})
+          
+      - name: Download PKG
+        run: aria2c -x 16 -o "${{ steps.info.outputs.file_name }}" "${{ inputs.pkg-url }}"
+        
+      - name: Create torrent using torrenttools
+        run: >
+          torrenttools create -v "${{ inputs.protocol_version }}"
+          -o "psn-pkg-torrents/${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent" -w "${{ inputs.pkg-url }}"
+          -c "${{ steps.info.outputs.info }} PSN PKG NPS by AnimMouse"
+          -s psn-pkg-torrents "${{ steps.info.outputs.file_name }}"
+          
+      - name: Add and commit torrent
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '"${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent"'
+          cwd: psn-pkg-torrents
+          default_author: github_actions
+          message: Add ${{ inputs.title }}
