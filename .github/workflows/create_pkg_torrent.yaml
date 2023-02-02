@@ -34,10 +34,11 @@ jobs:
   create_torrent:
     runs-on: ubuntu-latest
     steps:
-      - name: Install torrenttools
-        run: |
-          sudo add-apt-repository -y ppa:fbdtemme/torrenttools
-          sudo apt-get -qq install torrenttools
+      - name: Setup torrenttools
+        uses: AnimMouse/setup-appimage@v1
+        with:
+          name: torrenttools
+          url: https://github.com/fbdtemme/torrenttools/releases/download/v0.6.2/torrenttools-0.6.2-linux-x86_64.AppImage
           
       - name: Checkout PSN PKG Torrents
         uses: actions/checkout@v3
