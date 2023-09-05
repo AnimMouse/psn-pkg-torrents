@@ -41,7 +41,7 @@ jobs:
           url: https://github.com/fbdtemme/torrenttools/releases/download/v0.6.2/torrenttools-0.6.2-linux-x86_64.AppImage
           
       - name: Checkout PSN PKG Torrents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: psn-pkg-torrents
           
