@@ -10,7 +10,7 @@ Utilizes the power of peer to peer downloads and the client-server downloads.
 Combines the best of both worlds (P2P and Direct HTTP Link).
 
 ## Technical Infos
-All game links that I used for creating the torrent are from [NoPayStation](https://nopaystation.com/).
+All game links that I used for creating the torrent are from [NoPayStation](https://nopaystation.com).
 
 Our torrents are trackerless, relying on Distributed Hash Table and Peer EXchange, to help reduce the burden of torrent trackers.
 
@@ -28,7 +28,7 @@ If you need a game not included in this repository, comment on the [Game Request
 
 For games not downloading on torrents or for any problems, make an issue on GitHub.
 
-If you don't have a GitHub Account, you can join on our [Discord server](https://discord.gg/MafyWwVek6) or email your requests at psn-pkg-torrents@animmouse.com
+If you don't have a GitHub Account, you can join on our [Discord server](https://discord.gg/wvhjyHkKZj) or email your requests at psn-pkg-torrents@animmouse.com
 
 ## Contributing
 If you want to create a torrent to help our list of games, feel free to make a pull request.
