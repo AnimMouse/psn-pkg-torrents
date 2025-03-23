@@ -29,6 +29,9 @@ on:
         default: 1
         type: choice
         options: [1, 2, hybrid]
+      no_commit:
+        description: Don't commit torrent
+        type: boolean
         
 jobs:
   create_torrent:
@@ -48,8 +51,8 @@ jobs:
       - name: Get info and file name
         id: info
         run: |
-          echo "::set-output name=info::${{ inputs.title }} ${{ inputs.region }} ${{ inputs.console }} ${{ inputs.title-id }}"
-          echo ::set-output name=file_name::$(basename ${{ inputs.pkg-url }})
+          echo "info=${{ inputs.title }} ${{ inputs.region }} ${{ inputs.console }} ${{ inputs.title-id }}" >> $GITHUB_OUTPUT
+          echo "file_name=$(basename ${{ inputs.pkg-url }})" >> $GITHUB_OUTPUT
           
       - name: Download PKG
         run: aria2c -x 16 -o "${{ steps.info.outputs.file_name }}" "${{ inputs.pkg-url }}"
@@ -62,9 +65,17 @@ jobs:
           -s psn-pkg-torrents "${{ steps.info.outputs.file_name }}"
           
       - name: Add and commit torrent
+        if: '! inputs.no_commit'
         uses: EndBug/add-and-commit@v9
         with:
           add: '"${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent"'
           cwd: psn-pkg-torrents
           default_author: github_actions
           message: Add ${{ inputs.title }}
+          
+      - name: Upload torrent
+        if: inputs.no_commit
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.info.outputs.info }}
+          path: psn-pkg-torrents/${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent
