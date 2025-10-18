@@ -40,8 +40,9 @@ jobs:
       - name: Setup torrenttools
         uses: AnimMouse/setup-appimage@v2
         with:
-          name: torrenttools
+          filename: torrenttools
           url: https://github.com/fbdtemme/torrenttools/releases/download/v0.6.2/torrenttools-0.6.2-linux-x86_64.AppImage
+          cache_key: v0.6.2
           
       - name: Checkout PSN PKG Torrents
         uses: actions/checkout@v5
