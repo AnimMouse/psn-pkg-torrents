@@ -45,7 +45,7 @@ jobs:
           cache_key: v0.6.2
           
       - name: Checkout PSN PKG Torrents
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           path: psn-pkg-torrents
           
