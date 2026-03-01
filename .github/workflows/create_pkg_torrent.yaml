@@ -76,7 +76,7 @@ jobs:
           
       - name: Upload torrent
         if: inputs.no_commit
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ steps.info.outputs.info }}
           path: psn-pkg-torrents/${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent
