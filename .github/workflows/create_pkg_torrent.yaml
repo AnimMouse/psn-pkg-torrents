@@ -67,7 +67,7 @@ jobs:
           
       - name: Add and commit torrent
         if: '! inputs.no_commit'
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: '"${{ inputs.console }}/${{ steps.info.outputs.info }}.torrent"'
           cwd: psn-pkg-torrents
